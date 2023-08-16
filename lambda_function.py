@@ -3,6 +3,7 @@ import logging
 import os
 import json
 
+# required Role permission: AWSLambdaVPCAccessExecutionRole
 #https://repost.aws/knowledge-center/lambda-rds-connection-timeouts
 
 """
