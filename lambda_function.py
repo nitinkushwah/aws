@@ -41,3 +41,23 @@ def lambda_handler(event, context):
             'statusCode' : 200,
             'body' : json.dumps(json_data, default=str)
         }
+"""
+CREATE DATABASE ExampleDB;
+USE ExampleDB;
+CREATE TABLE Transactions (
+	transaction_id INT PRIMARY KEY,
+	amount DECIMAL(13,2) NOT NULL,
+	transaction_type ENUM('PURCHASE', 'REFUND') NOT NULL
+)
+
+desc Transactions;
+
+
+USE ExampleDB;
+desc Transactions;
+INSERT into Transactions (transaction_id, amount, transaction_type) values
+(111, 10, 'PRUCHASE'),
+(222, 200, 'REFUND');
+
+SELECT * FROM Transactions;
+"""
