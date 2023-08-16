@@ -6,6 +6,9 @@ import json
 # required Role permission: AWSLambdaVPCAccessExecutionRole
 #https://repost.aws/knowledge-center/lambda-rds-connection-timeouts
 
+# Change Advance settings for VPC while creating function or configure VPC for existing function
+#https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html
+
 """
 Create DB Manually and insert some test values
 CREATE DATABASE ExampleDB;
